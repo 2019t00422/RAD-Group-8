@@ -1,0 +1,11 @@
+C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\bin\Debug\RADGroup8.exe.config
+C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\bin\Debug\RADGroup8.exe
+C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\bin\Debug\RADGroup8.pdb
+C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.csproj.AssemblyReference.cache
+C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.csproj.SuggestedBindingRedirects.cache
+C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.Form1.resources
+C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.Properties.Resources.resources
+C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.csproj.GenerateResource.cache
+C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.csproj.CoreCompileInputs.cache
+C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.exe
+C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.pdb
