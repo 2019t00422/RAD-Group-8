@@ -15,6 +15,8 @@ namespace RADGroup8
         Double result = 0;
         String operation = "";
         bool enter_value = false;
+        int bracketCount = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -49,6 +51,7 @@ namespace RADGroup8
 
         }
 
+        //number 0 - 9 and . btn 
         private void button_Click(object sender, EventArgs e)
         {
             if ((textBox1.Text == "0") || (enter_value)) {
@@ -66,23 +69,25 @@ namespace RADGroup8
             }
         }
 
-        private void btnDel_Click(object sender, EventArgs e)
+
+        //create BackSpaceClick 
+        private void btnBackSpace_Click(object sender, EventArgs e)
         {
             int index = textBox1.Text.Length;
-            index --;
+            index--;
             textBox1.Text = textBox1.Text.Remove(index);
             if (textBox1.Text == "")
             {
                 textBox1.Text = "0";
             }
-            
         }
+
 
         private void btnCE_Click(object sender, EventArgs e)
         {
             textBox1.Text = "0";
         }
-
+        //+ or - btn
         private void btnPM_Click(object sender, EventArgs e)
         {
             Double result = Double.Parse(textBox1.Text);
@@ -130,18 +135,21 @@ namespace RADGroup8
            
         }
 
+        //pi btn 
         private void btnPi_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "3.141592653589 ";
+            textBox1.Text = Math.PI.ToString();
         }
 
+        //Log Button
         private void btnLog_Click(object sender, EventArgs e)
         {
             Double xlog = Double.Parse(textBox1.Text);
-            xlog = Math.Log(xlog);
+            xlog = Math.Log10(xlog);
             textBox1.Text = System.Convert.ToString(xlog);
         }
 
+        //Square root button
         private void btnSqrt_Click(object sender, EventArgs e)
         {
             Double xSqrt = Double.Parse(textBox1.Text);
@@ -149,6 +157,7 @@ namespace RADGroup8
             textBox1.Text = System.Convert.ToString(xSqrt);
         }
 
+        //SinH Button
         private void btnSinh_Click(object sender, EventArgs e)
         {
             Double xSinh = Double.Parse(textBox1.Text);
@@ -156,13 +165,15 @@ namespace RADGroup8
             textBox1.Text = System.Convert.ToString(xSinh);
         }
 
+        //Sin Button
         private void btnSin_Click(object sender, EventArgs e)
         {
             Double xSin = Double.Parse(textBox1.Text);
             xSin = Math.Sin(xSin);
             textBox1.Text = System.Convert.ToString(xSin);
         }
-        
+
+        //Cosh Button
         private void btnCosh_Click(object sender, EventArgs e)
         {
             Double xCosh = Double.Parse(textBox1.Text);
@@ -170,6 +181,7 @@ namespace RADGroup8
             textBox1.Text = System.Convert.ToString(xCosh);
         }
 
+        //Cos Button
         private void btnCos_Click(object sender, EventArgs e)
         {
             Double xCos = Double.Parse(textBox1.Text);
@@ -177,6 +189,7 @@ namespace RADGroup8
             textBox1.Text = System.Convert.ToString(xCos);
         }
 
+        //TanH Button
         private void btnTanh_Click(object sender, EventArgs e)
         {
             Double xTanh = Double.Parse(textBox1.Text);
@@ -184,6 +197,7 @@ namespace RADGroup8
             textBox1.Text = System.Convert.ToString(xTanh);
         }
 
+        //Tan Button
         private void btnTan_Click(object sender, EventArgs e)
         {
             Double xTan = Double.Parse(textBox1.Text);
@@ -191,6 +205,7 @@ namespace RADGroup8
             textBox1.Text = System.Convert.ToString(xTan);
         }
 
+        //Dec Button
         private void btnDec_Click(object sender, EventArgs e)
         {
             Double xDec = Double.Parse(textBox1.Text);
@@ -198,24 +213,28 @@ namespace RADGroup8
             textBox1.Text = System.Convert.ToString(xDec);
         }
 
+        //bin button
         private void btnBin_Click(object sender, EventArgs e)
         {
             int xBin = int.Parse(textBox1.Text);
             textBox1.Text = System.Convert.ToString(xBin,2);
         }
 
+        //hex button
         private void btnHex_Click(object sender, EventArgs e)
         {
             int xHex = int.Parse(textBox1.Text);
             textBox1.Text = System.Convert.ToString(xHex,16);
         }
 
+        //oct button
         private void btnOct_Click(object sender, EventArgs e)
         {
             int xOct = int.Parse(textBox1.Text);
             textBox1.Text = System.Convert.ToString(xOct,8);
         }
 
+        // X2 button
         private void btnX2_Click(object sender, EventArgs e)
         {
             double x2 ;
@@ -223,11 +242,43 @@ namespace RADGroup8
             textBox1.Text = System.Convert.ToString(x2);
         }
 
+        // X3 button
         private void btnX3_Click(object sender, EventArgs e)
         {
             double x3;
             x3 = Convert.ToDouble(textBox1.Text) * Convert.ToDouble(textBox1.Text) * Convert.ToDouble(textBox1.Text);
             textBox1.Text = System.Convert.ToString(x3);
+        }
+
+        // 1/X button
+        private void btn1X_Click(object sender, EventArgs e)
+        {
+            double x1;
+            x1 = Convert.ToDouble(1.0 / Convert.ToDouble(textBox1.Text)) ;
+            textBox1.Text = System.Convert.ToString(x1);
+        }
+
+        // In button
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            Double xIn = Double.Parse(textBox1.Text);
+            xIn = Math.Log(xIn);
+            textBox1.Text = System.Convert.ToString(xIn);
+        }
+
+        //Percentage button
+        private void btnPercentage_Click(object sender, EventArgs e)
+        {
+            double xPercentage ;
+            xPercentage = Convert.ToDouble(textBox1.Text) / Convert.ToDouble(100);
+            textBox1.Text = System.Convert.ToString(xPercentage);
+        }
+
+        private void temperatureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Temperature temp = new Temperature();
+            temp.Show();
+            
         }
     }
 }

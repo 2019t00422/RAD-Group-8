@@ -9,3 +9,4 @@ C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.csp
 C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.csproj.CoreCompileInputs.cache
 C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.exe
 C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.pdb
+C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.Temperature.resources

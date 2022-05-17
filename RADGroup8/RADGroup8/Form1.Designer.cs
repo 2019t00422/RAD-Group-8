@@ -69,11 +69,11 @@
             this.btnCosh = new System.Windows.Forms.Button();
             this.btnCos = new System.Windows.Forms.Button();
             this.btnBin = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
+            this.btn1X = new System.Windows.Forms.Button();
             this.btnTanh = new System.Windows.Forms.Button();
             this.btnTen = new System.Windows.Forms.Button();
             this.btnHex = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
+            this.btnIn = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnDot = new System.Windows.Forms.Button();
             this.btnExp = new System.Windows.Forms.Button();
@@ -81,7 +81,7 @@
             this.btnMod = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
             this.btnOct = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
+            this.btnPercentage = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +95,7 @@
             this.btnDel.Text = "Delete";
             this.btnDel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnDel.UseVisualStyleBackColor = true;
-            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            this.btnDel.Click += new System.EventHandler(this.btnBackSpace_Click);
             // 
             // btn7
             // 
@@ -161,69 +161,70 @@
             // standedToolStripMenuItem
             // 
             this.standedToolStripMenuItem.Name = "standedToolStripMenuItem";
-            this.standedToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.standedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.standedToolStripMenuItem.Text = "Standard";
             this.standedToolStripMenuItem.Click += new System.EventHandler(this.standedToolStripMenuItem_Click);
             // 
             // scienctificToolStripMenuItem
             // 
             this.scienctificToolStripMenuItem.Name = "scienctificToolStripMenuItem";
-            this.scienctificToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.scienctificToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.scienctificToolStripMenuItem.Text = "Scienctific";
             this.scienctificToolStripMenuItem.Click += new System.EventHandler(this.scienctificToolStripMenuItem_Click);
             // 
             // temperatureToolStripMenuItem
             // 
             this.temperatureToolStripMenuItem.Name = "temperatureToolStripMenuItem";
-            this.temperatureToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.temperatureToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.temperatureToolStripMenuItem.Text = "Temperature";
+            this.temperatureToolStripMenuItem.Click += new System.EventHandler(this.temperatureToolStripMenuItem_Click);
             // 
             // areaToolStripMenuItem
             // 
             this.areaToolStripMenuItem.Name = "areaToolStripMenuItem";
-            this.areaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.areaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.areaToolStripMenuItem.Text = "Area";
             // 
             // lengthToolStripMenuItem
             // 
             this.lengthToolStripMenuItem.Name = "lengthToolStripMenuItem";
-            this.lengthToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.lengthToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lengthToolStripMenuItem.Text = "Length";
             // 
             // dateToolStripMenuItem
             // 
             this.dateToolStripMenuItem.Name = "dateToolStripMenuItem";
-            this.dateToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.dateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dateToolStripMenuItem.Text = "Date";
             // 
             // timeToolStripMenuItem
             // 
             this.timeToolStripMenuItem.Name = "timeToolStripMenuItem";
-            this.timeToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.timeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.timeToolStripMenuItem.Text = "Time";
             // 
             // speedToolStripMenuItem
             // 
             this.speedToolStripMenuItem.Name = "speedToolStripMenuItem";
-            this.speedToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.speedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.speedToolStripMenuItem.Text = "Speed";
             // 
             // energyToolStripMenuItem
             // 
             this.energyToolStripMenuItem.Name = "energyToolStripMenuItem";
-            this.energyToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.energyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.energyToolStripMenuItem.Text = "Energy";
             // 
             // volumeToolStripMenuItem
             // 
             this.volumeToolStripMenuItem.Name = "volumeToolStripMenuItem";
-            this.volumeToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.volumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.volumeToolStripMenuItem.Text = "Volume";
             // 
             // currencyToolStripMenuItem
             // 
             this.currencyToolStripMenuItem.Name = "currencyToolStripMenuItem";
-            this.currencyToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.currencyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.currencyToolStripMenuItem.Text = "Currency";
             // 
             // textBox1
@@ -490,15 +491,16 @@
             this.btnBin.UseVisualStyleBackColor = true;
             this.btnBin.Click += new System.EventHandler(this.btnBin_Click);
             // 
-            // button28
+            // btn1X
             // 
-            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.Location = new System.Drawing.Point(484, 283);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(60, 60);
-            this.button28.TabIndex = 2;
-            this.button28.Text = "1/x";
-            this.button28.UseVisualStyleBackColor = true;
+            this.btn1X.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1X.Location = new System.Drawing.Point(484, 283);
+            this.btn1X.Name = "btn1X";
+            this.btn1X.Size = new System.Drawing.Size(60, 60);
+            this.btn1X.TabIndex = 2;
+            this.btn1X.Text = "1/x";
+            this.btn1X.UseVisualStyleBackColor = true;
+            this.btn1X.Click += new System.EventHandler(this.btn1X_Click);
             // 
             // btnTanh
             // 
@@ -533,15 +535,16 @@
             this.btnHex.UseVisualStyleBackColor = true;
             this.btnHex.Click += new System.EventHandler(this.btnHex_Click);
             // 
-            // button32
+            // btnIn
             // 
-            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button32.Location = new System.Drawing.Point(484, 349);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(60, 60);
-            this.button32.TabIndex = 3;
-            this.button32.Text = "In X";
-            this.button32.UseVisualStyleBackColor = true;
+            this.btnIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIn.Location = new System.Drawing.Point(484, 349);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(60, 60);
+            this.btnIn.TabIndex = 3;
+            this.btnIn.Text = "In X";
+            this.btnIn.UseVisualStyleBackColor = true;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
             // btn0
             // 
@@ -620,16 +623,16 @@
             this.btnOct.UseVisualStyleBackColor = true;
             this.btnOct.Click += new System.EventHandler(this.btnOct_Click);
             // 
-            // button40
+            // btnPercentage
             // 
-            this.button40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button40.Location = new System.Drawing.Point(484, 415);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(60, 60);
-            this.button40.TabIndex = 0;
-            this.button40.Text = "%";
-            this.button40.UseVisualStyleBackColor = true;
-            this.button40.Click += new System.EventHandler(this.button1_Click);
+            this.btnPercentage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPercentage.Location = new System.Drawing.Point(484, 415);
+            this.btnPercentage.Name = "btnPercentage";
+            this.btnPercentage.Size = new System.Drawing.Size(60, 60);
+            this.btnPercentage.TabIndex = 0;
+            this.btnPercentage.Text = "%";
+            this.btnPercentage.UseVisualStyleBackColor = true;
+            this.btnPercentage.Click += new System.EventHandler(this.btnPercentage_Click);
             // 
             // Form1
             // 
@@ -637,7 +640,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(554, 486);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button32);
+            this.Controls.Add(this.btnIn);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.btnHex);
             this.Controls.Add(this.btn3);
@@ -645,7 +648,7 @@
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btnTanh);
             this.Controls.Add(this.btn1);
-            this.Controls.Add(this.button28);
+            this.Controls.Add(this.btn1X);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.btnBin);
             this.Controls.Add(this.btn6);
@@ -661,7 +664,7 @@
             this.Controls.Add(this.btn8);
             this.Controls.Add(this.btnSinh);
             this.Controls.Add(this.btn7);
-            this.Controls.Add(this.button40);
+            this.Controls.Add(this.btnPercentage);
             this.Controls.Add(this.btnX2);
             this.Controls.Add(this.btnOct);
             this.Controls.Add(this.btnSqrt);
@@ -732,11 +735,11 @@
         private System.Windows.Forms.Button btnCosh;
         private System.Windows.Forms.Button btnCos;
         private System.Windows.Forms.Button btnBin;
-        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button btn1X;
         private System.Windows.Forms.Button btnTanh;
         private System.Windows.Forms.Button btnTen;
         private System.Windows.Forms.Button btnHex;
-        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button btnIn;
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnDot;
         private System.Windows.Forms.Button btnExp;
@@ -744,7 +747,7 @@
         private System.Windows.Forms.Button btnMod;
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button btnOct;
-        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button btnPercentage;
     }
 }
 
