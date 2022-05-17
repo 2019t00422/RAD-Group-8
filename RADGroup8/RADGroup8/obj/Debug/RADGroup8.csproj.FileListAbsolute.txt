@@ -9,4 +9,18 @@ C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.csp
 C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.csproj.CoreCompileInputs.cache
 C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.exe
 C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.pdb
+<<<<<<< HEAD
 C:\Users\madhawa\Desktop\RAD Group 8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.Temperature.resources
+=======
+F:\UOC\assignments\RAD\RAD-Group-8\RADGroup8\RADGroup8\bin\Debug\RADGroup8.exe.config
+F:\UOC\assignments\RAD\RAD-Group-8\RADGroup8\RADGroup8\bin\Debug\RADGroup8.exe
+F:\UOC\assignments\RAD\RAD-Group-8\RADGroup8\RADGroup8\bin\Debug\RADGroup8.pdb
+F:\UOC\assignments\RAD\RAD-Group-8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.csproj.AssemblyReference.cache
+F:\UOC\assignments\RAD\RAD-Group-8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.csproj.SuggestedBindingRedirects.cache
+F:\UOC\assignments\RAD\RAD-Group-8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.Form1.resources
+F:\UOC\assignments\RAD\RAD-Group-8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.Properties.Resources.resources
+F:\UOC\assignments\RAD\RAD-Group-8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.csproj.GenerateResource.cache
+F:\UOC\assignments\RAD\RAD-Group-8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.csproj.CoreCompileInputs.cache
+F:\UOC\assignments\RAD\RAD-Group-8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.exe
+F:\UOC\assignments\RAD\RAD-Group-8\RADGroup8\RADGroup8\obj\Debug\RADGroup8.pdb
+>>>>>>> d7a7f6d93454e6887115de7ab60e83b07a7b3204
