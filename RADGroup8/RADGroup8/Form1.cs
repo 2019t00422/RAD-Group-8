@@ -15,7 +15,7 @@ namespace RADGroup8
         Double result = 0;
         String operation = "";
         bool enter_value = false;
-        int bracketCount = 0;
+       // int bracketCount = 0;
 
         public Form1()
         {
