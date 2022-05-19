@@ -87,14 +87,16 @@
             // 
             // btnDel
             // 
+            this.btnDel.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.Image = global::RADGroup8.Properties.Resources.clear_symbol;
             this.btnDel.Location = new System.Drawing.Point(12, 150);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(60, 60);
             this.btnDel.TabIndex = 0;
-            this.btnDel.Text = "Delete";
             this.btnDel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.UseVisualStyleBackColor = false;
             this.btnDel.Click += new System.EventHandler(this.btnBackSpace_Click);
             // 
             // btn7
@@ -238,7 +240,7 @@
             this.textBox1.Size = new System.Drawing.Size(530, 109);
             this.textBox1.TabIndex = 5;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.TextChanged += new System.EventHandler(this.Form1_Load);
             // 
             // btnCE
             // 
@@ -688,6 +690,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
