@@ -24,8 +24,8 @@ namespace RADGroup8
 
         private void Form1_Load(object sender, EventArgs e)
         {
-             this.Width = 300;
-             textBox1.Width = 260;
+            //  this.Width = 300;
+            //  textBox1.Width = 260;
         }
 
         private void button1_Click(object sender, EventArgs e)
