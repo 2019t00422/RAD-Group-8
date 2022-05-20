@@ -348,5 +348,16 @@ namespace RADGroup8
             temp.Show();
             
         }
+
+        private void areaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Area are = new Area();
+            are.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
