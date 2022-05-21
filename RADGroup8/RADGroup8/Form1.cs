@@ -24,8 +24,8 @@ namespace RADGroup8
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //  this.Width = 300;
-            //  textBox1.Width = 260;
+            this.Width = 282;
+            textBox1.Width = 260;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,14 +34,14 @@ namespace RADGroup8
         }
         private void standedToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Width = 300;
+            this.Width = 282;
             textBox1.Width = 260;
            
         }
 
         private void scienctificToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Width = 570;
+            this.Width = 554;
             textBox1.Width = 530;
 
         }
@@ -358,6 +358,24 @@ namespace RADGroup8
         private void label1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnMod_Click(object sender, EventArgs e)
+        {
+            //modulas button
+            if (textBox1.Text == "" || textBox1.Text == "0")
+            {
+                return;
+            }
+            string xMod = "%";
+            textBox1.Text = System.Convert.ToString(textBox1.Text) + xMod;
+        }
+
+        private void aboutAppToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About About = new About();
+            About.Show();
+
         }
     }
 }
